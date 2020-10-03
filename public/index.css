@@ -1,0 +1,440 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	text-decoration: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start your code here: */
+html {
+	font-size: 62.5%;
+	font-family: 'Roboto',Arial,Helvetica,sans-serif;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .main-content {
+	padding-top: 200px;
+}
+
+#topbar {
+	background-color: #313131;
+	display: flex;
+	justify-content: space-between;
+}
+
+.flag {
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+}
+
+.brands{
+	padding: 10px 0px;
+	display: flex;
+	margin-left: 15px;
+}
+
+.brands p {
+	font-size: 1.6rem;
+	margin-right: 15px;
+	font-style: italic;
+	color: gray;
+
+}
+
+.brands p:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.icons {
+	color: white;
+}
+
+.icons div {
+	margin-right: 15px;
+}
+
+.icons div:hover {
+	cursor: pointer;
+}
+
+.container {
+	font-size: 2rem;
+}
+
+.topnav {
+	overflow: hidden;
+}
+
+.mainNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	background-color: #1a1a1a;
+	padding: 10px;
+}
+
+.logo {
+	font-style: italic;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width:700px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 700;
+	padding: 2px;
+}
+
+.nav a:hover{
+	opacity: .5;
+	border-bottom: 1px solid gray;
+}
+
+.icon {
+	display: none;
+}
+
+.mobileNav {
+	display: none;
+}
+  
+.mobileNav a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.3rem;
+	font-weight: 700;
+	padding: 2px;
+	width: 100%;
+}
+
+#search {
+	display: flex;
+	align-items: center;
+	border: 1px solid gray;
+	color: white;
+	width: 250px;
+	padding-left: 5px;
+}
+
+#search p {
+	font-size:1.5rem;
+	font-style: italic;
+	padding:10px;
+}
+
+h1 {
+	font-size: 3rem;
+	color: white;
+	font-weight: bold;
+}
+
+
+.text {
+	color: black;
+	font-size: 3.5rem;
+	font-weight: 800;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.text p {
+	padding: 5px;
+	color: white;
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.row p {
+	color: white;
+	font-size:2.5rem;
+	font-weight: bold;
+	margin: 15px 0px 15px 0px;
+}
+
+.button {
+	color: black;
+	background-color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.button:hover {
+	background-color: lightgray;
+}
+
+
+.first {
+	background-image: url("beau-runsten-mR-N67XjTHg-unsplash.jpg");
+	background-position: center center;
+}
+
+.section {
+	height: 450px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+.btns {
+	display: flex;
+}
+
+.second {
+	background-image: url("person-riding-bike-making-trek-on-thin-air-71104.jpg");
+}
+
+.third {
+	display:flex;
+	align-items: flex-start;
+	padding-left: 70px;
+	background-image: url("biker-holding-mountain-bike-on-top-of-mountain-with-green-161172.jpg");
+}
+
+.fourth {
+	background-image: url("man-standing-near-shore-1208777.jpg")
+}
+
+.third>div>h1 {
+	margin-bottom: 15px;
+}
+
+.sign-up {
+	background-color: #333333;
+	color: grey;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sign-up-div {
+	width: 30%;
+	margin: 25px 0px;
+}
+
+.sign-up h1 {
+	color: #ffffff;
+	padding: 10px;
+	font-weight: 800;
+	font-size: 4rem;
+}
+
+.sub-p {
+	font-size: 1.8rem;
+	line-height: 1.2;
+}
+
+.email {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid gray;
+	margin: 25px 0px;
+}
+
+.email p {
+	font-size: 1.5rem;
+	padding: 5px;
+}
+
+.privacy-policy {
+	font-size: 1.2rem;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.social-media {
+	width: 20%;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 25px 0px;
+}
+
+.social-media i {
+	font-size: 32px;
+}
+
+footer {
+	background-color: #333333;
+	display: flex;
+	justify-content: center;
+}
+
+.footer-menu {
+	width: 75%;
+	border-top: 1px solid gray;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.footer-menu h2 {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 1.4rem;
+	padding: 30px 0 10px 0;
+}
+
+.footer-menu ul {
+	padding-bottom: 25px;
+}
+
+.footer-menu ul li {
+	font-size: 1.3rem;
+	font-style: italic;
+	line-height: 1.8;
+}
+
+.footer-menu ul li a {
+	text-decoration: none;
+	color: grey;
+}
+
+@media only screen and (max-width: 500px) {
+	#topbar {
+		display: none;
+	}
+
+	.header-icons {
+		display: none;
+	}
+
+	.icon {
+		display: block;
+		color: white;
+	} 
+
+	.nav li a {
+		color: white;
+		font-size: 1.5rem;
+	}
+
+	.nav li {
+		border-top: 1px solid gray;
+		padding: 20px;
+	}
+
+	.topnav .nav {
+		display: none;
+	}
+	
+	.topnav.responsive {
+		position: relative;
+	}
+
+	.topnav.responsive .nav {
+		display: block;
+	}
+
+	.mainNav {
+		display: block;
+		padding: 0px;
+	}
+	.mobileFormat {
+	display: flex;
+    align-items: center;
+	width: 100%;
+	padding: 15px;
+	}
+
+	.logo {
+		width: 100%;
+		text-align: center;
+	}
+	.sign-up-div {
+		width: 90%;
+	}
+	.social-media {
+		width: 80%;
+	}
+
+	.footer-menu div ul{
+		display: none;
+	}
+
+	.footer-menu {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.footer-menu div {
+		border-bottom: 1px solid gray;
+	}
+
+	.footer-menu h2 {
+		padding: 30px 10px;
+	}
+
+  } 
